@@ -24,7 +24,15 @@ gem 'unicode_case_converter'
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+text = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
+UnicodeCaseConverter::Converter.new(text).downcase
+# => "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
+
+text = "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
+UnicodeCaseConverter::Converter.new(text).upcase
+# => "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
+```
 
 ## Contributing
 
