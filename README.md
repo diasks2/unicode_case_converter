@@ -32,6 +32,10 @@ UnicodeCaseConverter::Converter.new(text).downcase
 text = "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
 UnicodeCaseConverter::Converter.new(text).upcase
 # => "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
+
+text = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
+UnicodeCaseConverter::Converter.new(text).capitalize
+# => "Αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
 ```
 
 ## Contributing

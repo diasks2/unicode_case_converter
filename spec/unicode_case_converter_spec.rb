@@ -27,6 +27,20 @@ describe UnicodeCaseConverter do
     expect(ucc.downcase).to eq("αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ")
   end
 
+  it "capitalizes a string (example)" do
+    text = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ".freeze
+    ucc = UnicodeCaseConverter::Converter.new(text)
+    unicode_result = Unicode.capitalize(text)
+    expect(ucc.capitalize).to eq(unicode_result)
+  end
+
+  it "capitalizes a string 2" do
+    text = "hello world".freeze
+    ucc = UnicodeCaseConverter::Converter.new(text)
+    unicode_result = Unicode.capitalize(text)
+    expect(ucc.capitalize).to eq(unicode_result)
+  end
+
   (0..3).each do |first_digit|
     [*'0'..'9', *'A'..'F'].sample(16).sort.each do |second_digit|
       [*'0'..'9', *'A'..'F'].sample(16).sort.each do |third_digit|

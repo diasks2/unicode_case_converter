@@ -139,5 +139,9 @@ module UnicodeCaseConverter
           .gsub(/\u{2126}/, "\u{03C9}")
           .gsub(/\u{212A}/, "\u{006B}")
     end
+
+    def capitalize
+      UnicodeCaseConverter::Converter.new(UnicodeCaseConverter::Converter.new(text).downcase.slice(0,1)).upcase + UnicodeCaseConverter::Converter.new(text).downcase.slice(1..-1)
+    end
   end
 end
