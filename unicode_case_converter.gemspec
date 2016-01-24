@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["diasks2@gmail.com"]
 
   spec.summary       = %q{Upcase or downcase unicode strings}
-  spec.description   = %q{A pure ruby implementation to upcase and downcase unicode strings}
+  spec.description   = %q{A pure Ruby implementation to upcase and downcase unicode strings}
   spec.homepage      = "https://github.com/diasks2/unicode_case_converter"
 
   spec.files         = `git ls-files -z`.split("\x0")
