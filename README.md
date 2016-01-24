@@ -1,5 +1,7 @@
 # unicode_case_converter
 
+[![Gem Version](https://badge.fury.io/rb/unicode_case_converter.svg)](https://badge.fury.io/rb/unicode_case_converter) [![Build Status](https://travis-ci.org/diasks2/unicode_case_converter.png)](https://travis-ci.org/diasks2/unicode_case_converter) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](https://github.com/diasks2/unicode_case_converter/blob/master/LICENSE.txt)
+
 A pure Ruby implementation to upcase and downcase unicode strings. The [unicode](https://github.com/blackwinter/unicode) gem works great but for a [Shoes app](http://shoesrb.com/) I am making I needed a pure Ruby solution to simplify things.
 
 Resources:
