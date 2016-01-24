@@ -6,8 +6,6 @@ A pure Ruby implementation to upcase and downcase unicode strings. The [unicode]
 
 Resources:
 * [Character Properties, Case Mappings & Names FAQ](http://unicode.org/faq/casemap_charprop.html)
-* [UnicodeData.txt](ftp://ftp.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt)
-* [SpecialCasing.txt](ftp://ftp.unicode.org/Public/UCD/latest/ucd/SpecialCasing.txt)
 
 ## Installation
 
