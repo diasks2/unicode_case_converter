@@ -157,7 +157,7 @@ module UnicodeCaseConverter
     end
 
     def capitalize
-      UnicodeCaseConverter::Converter.new(UnicodeCaseConverter::Converter.new(text).downcase.slice(0,1)).upcase + UnicodeCaseConverter::Converter.new(text).downcase.slice(1..-1)
+      UnicodeCaseConverter::Converter.new(text.slice(0,1)).upcase + UnicodeCaseConverter::Converter.new(text).downcase.slice(1..-1)
     end
   end
 end
