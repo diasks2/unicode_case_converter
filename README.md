@@ -26,15 +26,15 @@ gem 'unicode_case_converter'
 
 ```ruby
 text = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
-UnicodeCaseConverter::Converter.new(text).downcase
+UnicodeCaseConverter::downcase(text)
 # => "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
 
 text = "αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
-UnicodeCaseConverter::Converter.new(text).upcase
+UnicodeCaseConverter::upcase(text)
 # => "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
 
 text = "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΆΈΉΊΌΎΏΪΫ"
-UnicodeCaseConverter::Converter.new(text).capitalize
+UnicodeCaseConverter::capitalize(text)
 # => "Αβγδεζηθικλμνξοπρστυφχψωάέήίόύώϊϋ"
 ```
 
